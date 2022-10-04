@@ -3,25 +3,25 @@ public class Main {
 
         //Задание 1
         for (int i = 0; i <= 10; i++) {
-            System.out.print(" " +i );
+            System.out.print(" " + i);
         }
         System.out.println("\n");
 
         //Задание 2
         for (int q = 10; q >= 1; q--) {
-            System.out.print( " " + q );
+            System.out.print(" " + q);
         }
         System.out.println("\n");
 
         //Задание 3
         for (int w = 2; w <= 17; w = w + 2) {
-            System.out.print(" " + w );
+            System.out.print(" " + w);
         }
         System.out.println("\n");
 
         //Задание 4
         for (int e = 10; e >= -10; e--) {
-            System.out.print(" " + e );
+            System.out.print(" " + e);
         }
         System.out.println("\n");
 
@@ -58,9 +58,40 @@ public class Main {
         int deposit1 = 29_000;
         int total1 = 0;
         for (int i = 1; i <= 12; i++) {
-            total1= total1 + total1/100;
+            total1 = total1 + total1 / 100;
             total1 = total1 + deposit1;
             System.out.println("Месяц " + i + " , сумма накоплений равна " + total1 + " рублей.");
         }
+        //Задание 3
+        int game = 0;
+        for (int p = 1; p <= 30; p++) {
+            game = game + 1;
+            if (game % 3 == 0 && game % 5 == 0) {
+                System.out.println(game + ": ping pong");
+            } else if (game % 3 == 0) {
+                System.out.println(game + ": ping");
+            } else if (game % 5 == 0) {
+                System.out.println(game + ": pong");
+            } else {
+                System.out.println(game + ":");
+            }
+        }
+        System.out.println(" ");
+
+        //Задание 4 // 0 1 1 2 3 5 8 13 21 34
+        int numb = 1;
+        int numb1 = 1;
+        int numb2;
+        System.out.print("0 " + numb + " " + numb1 + " ");
+        for (int o = 3; o < 10; o++) {
+            numb2 = numb + numb1;
+            System.out.print(numb2 + " ");
+            numb = numb1;
+            numb1 = numb2;
+
+
+        }
+
+
     }
 }
